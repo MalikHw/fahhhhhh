@@ -4,15 +4,14 @@
   "version": "1.0.0",
   "description": "Randomly closes tabs because lol it's fun",
   "permissions": ["tabs", "storage"],
+  "web_accessible_resources": [{
+    "resources": ["warning.html"],
+    "matches": ["<all_urls>"]
+  }]
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon.png"
   },
   "background": {
     "service_worker": "background.js"
-  }
-  "web_accessible_resources": [{
-    "resources": ["warning.html"],
-    "matches": ["<all_urls>"]
-  }]
 }
