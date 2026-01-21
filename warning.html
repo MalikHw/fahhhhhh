@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+    }
+    .container {
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 72px;
+      margin: 0;
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+    .victim-info {
+      background: rgba(0,0,0,0.3);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 30px 0;
+      max-width: 600px;
+    }
+    .victim-title {
+      font-size: 18px;
+      margin: 10px 0;
+      word-wrap: break-word;
+    }
+    .victim-url {
+      font-size: 14px;
+      opacity: 0.8;
+      word-wrap: break-word;
+    }
+    button {
+      padding: 15px 40px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 10px;
+      transition: all 0.3s;
+    }
+    #cancelBtn {
+      background: white;
+      color: #ff6b6b;
+    }
+    #cancelBtn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .countdown {
+      font-size: 120px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>⚠️ fahhhhhh-ing right now ⚠️</h1>
+    <div class="countdown" id="countdown">3</div>
+    <div class="victim-info">
+      <div style="font-size: 24px; margin-bottom: 10px;">🎯 VICTIM SELECTED</div>
+      <div class="victim-title" id="victimTitle">Loading...</div>
+      <div class="victim-url" id="victimUrl"></div>
+    </div>
+    <button id="cancelBtn">CANCEL! SAVE THIS TAB!</button> <!--save-->
+  </div>
+
+  <script src="warning.js"></script>
+</body>
+</html>
