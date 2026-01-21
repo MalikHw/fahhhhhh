@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "fahhhhhh",
+  "version": "1.0",
+  "description": "Randomly closes tabs because lol it's fun",
+  "permissions": ["tabs", "storage"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": ["warning.html"]
+}
