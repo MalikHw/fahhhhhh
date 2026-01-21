@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      margin: 0;
+    }
+    h2 {
+      margin: 0 0 15px 0;
+      text-align: center;
+      font-size: 24px;
+    }
+    .stats {
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-bottom: 10px;
+    }
+    #spinBtn {
+      background: #ff6b6b;
+      color: white;
+    }
+    #spinBtn:hover {
+      background: #ff5252;
+      transform: scale(1.05);
+    }
+    #resetBtn {
+      background: rgba(255,255,255,0.2);
+      color: white;
+      font-size: 12px;
+      padding: 8px;
+    }
+    #resetBtn:hover {
+      background: rgba(255,255,255,0.3);
+    }
+    .victim-list {
+      max-height: 150px;
+      overflow-y: auto;
+      background: rgba(0,0,0,0.2);
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    .victim-item {
+      margin: 5px 0;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <h2>Fahhhhhh</h2>
+  
+  <div class="stats">
+    <div class="stat-item">
+      <span>💀 Tabs Sacrificed:</span>
+      <span id="totalKilled">0</span>
+    </div>
+    <div class="stat-item">
+      <span>📊 Total Spins:</span>
+      <span id="totalSpins">0</span>
+    </div>
+  </div>
+
+  <button id="spinBtn">SPIN THE WHEEL</button>
+  <button id="resetBtn">Reset Stats</button>
+
+  <div class="victim-list" id="victims"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
