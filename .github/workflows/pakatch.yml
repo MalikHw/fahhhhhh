@@ -52,7 +52,7 @@ jobs:
         # Ensure UPDATE.md is included
         cp UPDATE.md dist/chrome/ 2>/dev/null || echo "UPDATE.md not found, skipping"
         cd dist/chrome
-        zip -r ../miku-theme-chrome.zip .
+        zip -r ../fahhhhhh-chrome.zip .
     
     - name: Create Firefox package
       run: |
@@ -65,15 +65,15 @@ jobs:
         # Ensure UPDATE.md is included
         cp UPDATE.md dist/firefox/ 2>/dev/null || echo "UPDATE.md not found, skipping"
         cd dist/firefox
-        zip -r ../miku-theme-firefox.zip .
+        zip -r ../fahhhhhh-firefox.zip .
     
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
         name: extension-packages
         path: |
-          dist/miku-theme-chrome.zip
-          dist/miku-theme-firefox.zip
+          dist/fahhhhhh-chrome.zip
+          dist/fahhhhhh-firefox.zip
 
     - name: Create Git tag
       run: |
@@ -89,7 +89,7 @@ jobs:
         name: Auto Build Update
         body: "...idk? cuz ts is an autobuild"
         files: |
-          dist/miku-theme-chrome.zip
-          dist/miku-theme-firefox.zip
+          dist/fahhhhhh-chrome.zip
+          dist/fahhhhhh-firefox.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
